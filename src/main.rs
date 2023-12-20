@@ -13,7 +13,7 @@ fn healthcheck(url: &str) -> Result<(), String> {
             200 => println!("OK(200)"),
             code => println!("ERR({})", code),
         }
-        thread::sleep(Duration::from_secs(10)); // Интервал между проверками (в данном случае 10 секунд)
+        thread::sleep(Duration::from_secs(10)); 
     }
 }
 
